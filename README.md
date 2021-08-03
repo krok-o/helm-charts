@@ -15,4 +15,4 @@ krok-config     0.1.0                   unpacked
 krok-database   0.1.0                   unpacked
 ```
 
-Initialize and build the dependencies first, then install Krok itself.
+Simply run `helm install krok` to install Krok.
