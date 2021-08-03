@@ -15,4 +15,4 @@ krok-config     0.1.0                   unpacked
 krok-database   0.1.0                   unpacked
 ```
 
-Initialise and build the dependencies first, then install Krok itself.
+Initialize and build the dependencies first, then install Krok itself.

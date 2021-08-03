@@ -1,0 +1,20 @@
+name: Test
+
+on:
+  pull_request: {}
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Run check
+        run: |
+          helm lint krok
+          kind create cluster
+          helm install --dry-run --debug krok krok
+          kind delete cluster
