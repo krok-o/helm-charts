@@ -8,7 +8,8 @@ data:
         filename varchar unique not null,
         hash varchar unique not null,
         location varchar not null,
-        enabled boolean not null
+        enabled boolean not null,
+        url varchar
     );
 
     create table command_settings
